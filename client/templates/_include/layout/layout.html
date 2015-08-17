@@ -1,0 +1,27 @@
+<template name="layout">
+
+  <header>
+
+    <div class="logo">
+      <span>Lokal</span>
+    </div>
+
+    <span class="tagline">Food discoveries</span>
+
+    <nav>
+      <ul>
+        <li><a href="{{pathFor 'new'}}">+ Add new</a></li>
+        <li><a href="{{pathFor 'login'}}">Login</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    {{> Template.dynamic template=main }}
+
+  </main>
+
+</template>

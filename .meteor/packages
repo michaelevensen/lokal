@@ -7,3 +7,11 @@
 meteor-platform
 autopublish
 insecure
+aldeed:simple-schema
+kadira:flow-router
+kadira:blaze-layout
+aldeed:collection2
+juliancwirko:s-jeet
+meteorhacks:subs-manager
+meteorhacks:fast-render
+zimme:active-route
