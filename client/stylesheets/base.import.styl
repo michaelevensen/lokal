@@ -1,20 +1,63 @@
 normalize-css()
 
 html
-	-webkit-font-smoothing: antialiased
-	text-rendering: optimizeLegibility
+	-webkit-font-smoothing antialiased
+	text-rendering optimizeLegibility
 
 html,
 body
-	height: 100%
-	margin: 0px
-	padding: 0px
+	height 100%
+	margin 0px
+	padding 0px
+	font-size 22px
+
+.hero
+	width 100%
+	background-color $light_gray
+
+main
+	.wrapper
+		max-width 1260px
+		margin 0 auto
+		padding 75px
+
+		&.left
+			margin 0 50px
+			max-width 100%
+
+		+below(1280px)
+			padding 35px
 
 ul,
 li
-	list-style: none
-	margin: 0
-	padding: 0
+	list-style none
+	margin 0
+	padding 0
 
 a
-	text-decoration: none
+	text-decoration none
+	color black
+
+textarea,
+input[type='text'],
+input[type='password']
+	color $dark_gray
+	border 1px solid $light_gray
+	box-sizing border-box
+	box-shadow none
+	padding 20px
+	appearance none
+	outline none
+	width 100%
+	resize none
+
+	&:focus
+		outline none
+
+label
+	color $dark_gray
+	font-size 12px
+	font-weight bold
+	text-transform uppercase
+	letter-spacing 1px
+	margin-bottom 10px

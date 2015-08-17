@@ -1,0 +1,48 @@
+<template name="newDrink">
+
+  <form>
+
+    <div class="hero">
+      <div class="wrapper">
+
+        <input type="text" name="item-title" placeholder="Title" autofocus>
+
+        <div class="group">
+          <label for="item-type">What is this?</label>
+          <select name="item-type" id="item-type">
+            <option value="beer">Beer</option>
+            <option value="wine">Wine</option>
+          </select>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="wrapper">
+
+      <div class="group">
+        <label for="item-note">Notes</label>
+        <textarea name="item-note" id="item-note" rows="10" placeholder="A couple of words ..."></textarea>
+      </div>
+
+
+      <div class="group">
+        <label for="item-origin">Where is it from?</label>
+
+        {{> itemLocation }}
+
+
+        <!-- <input type="text" name="item-origin" id="item-origin" placeholder="Place or country"> -->
+      </div>
+
+      <button type="submit">Save</button>
+
+    </div>
+
+  </form>
+
+
+
+</template>

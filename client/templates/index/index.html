@@ -1,28 +1,41 @@
 <template name="index">
 
-  <section class="place">
+  <div class="wrapper left">
 
-    <h1>Places</h1>
+    <section class="place">
 
-  </section>
+      <h3>Places</h3>
 
+      <a class="item-grid" href="{{pathFor 'new/place'}}"><span class="add-new type">+ Add new place</span></a>
 
-  <section class="food">
-
-    <h1>Foods</h1>
-
-
-  </section>
+    </section>
 
 
-  <section class="drink">
+    <section class="food">
 
-    <h1>Drinks</h1>
+      <h3>Foods</h3>
+
+      {{#each foods}}
+        {{> item }}
+      {{/each}}
+
+      <a class="item-grid" href="{{pathFor 'new/food'}}"><span class="add-new type">+ Add new food</span></a>
+
+    </section>
 
 
+    <section class="drink">
 
-  </section>
+      <h3>Drinks</h3>
 
+      {{#each drinks}}
+        {{> item }}
+      {{/each}}
 
+      <a class="item-grid" href="{{pathFor 'new/drink'}}"><span class="add-new type">+ Add new drank</span></a>
+
+    </section>
+
+  </div>
 
 </template>

@@ -1,0 +1,13 @@
+<template name="item">
+
+  <a class="item-grid" href="{{pathFor 'view/drink' slug=slug}}">
+
+    <span class="type">{{type}}</span>
+    <span class="title">{{title}}</span>
+    {{#if note}}
+      <span class="note">{{note}}</span>
+    {{/if}}
+
+  </a>
+
+</template>

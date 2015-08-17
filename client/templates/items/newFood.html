@@ -1,0 +1,40 @@
+<template name="newFood">
+
+    <form>
+
+      <div class="hero">
+        <div class="wrapper">
+
+          <input type="text" name="item-title" placeholder="Title" autofocus>
+
+          <!-- <div class="group">
+            <label for="item-type">What is this?</label>
+            <input type="text" name="item-type" placeholder="Cheese, pretzle or sausage ..." autofocus>
+          </div> -->
+
+        </div>
+
+      </div>
+
+
+      <div class="wrapper">
+
+        <div class="group">
+          <label for="item-note">Notes</label>
+          <textarea name="item-note" id="item-note" rows="10" placeholder="A couple of words ..."></textarea>
+        </div>
+
+
+        <div class="group">
+          <label for="item-origin">Where is it from?</label>
+
+          {{> itemLocation }}
+        </div>
+
+        <button type="submit">Save</button>
+
+      </div>
+
+    </form>
+
+</template>

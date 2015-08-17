@@ -1,0 +1,32 @@
+<template name="viewDrink">
+
+  {{#with drink}}
+
+      <div class="hero">
+        <div class="wrapper">
+
+          <h4>{{type}}</h4>
+          <h1>{{title}}</h1>
+
+        </div>
+
+      </div>
+
+
+      <div class="wrapper">
+
+        <div class="note">
+          <p>{{note}}</p>
+        </div>
+
+        <div class="item-origin">
+          <h4>From</h4>
+          {{origin}}
+        </div>
+
+      </div>
+
+    {{/with}}
+
+
+</template>
