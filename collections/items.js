@@ -1,8 +1,8 @@
 
 Items = new Mongo.Collection('items');
 
-// Schema for Addresses
-AddressSchema = new SimpleSchema({
+// Schema for Places
+PlaceSchema = new SimpleSchema({
   fullAddress: {
     type: String
   },
@@ -57,8 +57,8 @@ Items.attachSchema(new SimpleSchema({
     },
 	},
 
-  address: {
-    type: AddressSchema,
+  place: {
+    type: PlaceSchema,
     optional: true
   },
 
